@@ -1,0 +1,3 @@
+/home/kumaraswamy/Documents/mlemon/trash-guy/cmake-build-debug/CMakeFiles/trash_guy.dir
+/home/kumaraswamy/Documents/mlemon/trash-guy/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kumaraswamy/Documents/mlemon/trash-guy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
