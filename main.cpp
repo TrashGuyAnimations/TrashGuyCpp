@@ -21,19 +21,20 @@ class trash_guy {
 
     void play() {
         char l;
+        int inc = 0;
         while ((l = text[0]) != '\0') {
             bool going_right = true;
-            for (int left_space = 0, right_space = 10;;) {
+            for (int left_space = 0, right_space = 10 + inc;;) {
                 system("clear");
                 cout << THRASH << repeat_space(left_space)
                      << (going_right ? HAPPY_LEFT : l + HAPPY_RIGHT)
                      << repeat_space(right_space) << text << endl;
                 this_thread::sleep_for(chrono::milliseconds(INTERVAL));
 
-                if (going_right && left_space >= 10) {
+                if (going_right && left_space >= 10 + inc) {
                     going_right = false;
                     left_space = 10;
-                    right_space = 0;
+                    right_space = inc++;
                     text.erase(0, 1);
                 } else if (!going_right && right_space >= 10) {
                     break;
